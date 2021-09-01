@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktail Db</title>
+    <!-- Bootstrap Css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        .container {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Starts Main Section -->
+    <main class="container">
+
+        <!-- Starts Search Box & Button Section -->
+        <section class="mt-4">
+            <h1 class="text-center text-success fw-bold my-2">Search Your Favorite Cocktail</h1>
+            <div class="input-group mb-3 w-50 mx-auto">
+                <input id="search-box" type="text" class="form-control" placeholder="Enter Your Drink Name"
+                    aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="button" id="search-btn">Search</button>
+            </div>
+        </section>
+        <!-- Ends Search Box & Button Section -->
+
+        <!-- Error Message -->
+        <div id="error-text" class="text-center">
+
+        </div>
+        <!-- Error Message -->
+
+
+        <!-- Starts Search Results Section -->
+        <section>
+            <div id="drinks-container" class="row row-cols-1 row-cols-md-3 g-4 my-4">
+
+            </div>
+        </section>
+        <!-- Ends Search Results Section -->
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div id="modal-box" class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+
+            </div>
+        </div>
+        <!-- Modal -->
+    </main>
+    <!-- Ends Main Section -->
+
+    <!-- Bundle Js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
+    <!-- Main Js -->
+    <script src="app.js"></script>
+</body>
+
+</html>
